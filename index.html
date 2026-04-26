@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Ilyas — WordPress Developer & AI Automation Specialist. 10+ months at NSD Soft building custom CRUD systems and n8n workflows.">
+    <meta name="description" content="Muhammad Ilyas — WordPress Developer & AI Automation Specialist. 10+ months at NSD Soft building custom CRUD systems, n8n workflows, and AI-powered solutions for business growth.">
     <meta name="keywords" content="WordPress Developer, AI Automation, n8n Workflows, PHP MySQL, NSD Soft, Muhammad Ilyas">
     <meta name="author" content="Muhammad Ilyas">
     <title>Muhammad Ilyas — WordPress Developer & AI Automation Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
     <nav id="main-nav" class="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
@@ -32,113 +33,380 @@
         </div>
     </nav>
 
+    <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
     <section id="hero" class="hero-section">
         <div class="hero-bg-grid"></div>
         <div class="hero-glow hero-glow-1"></div>
         <div class="hero-glow hero-glow-2"></div>
+        <div class="floating-particles" id="particles"></div>
         <div class="hero-container">
-            <div class="hero-badge">
+            <div class="hero-badge" data-animate="fade-up">
                 <span class="badge-dot"></span>
                 Available for Projects — 2026
             </div>
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
                 I Build <span class="gradient-text">Intelligent</span><br>
                 WordPress Solutions<br>
                 <span class="hero-title-sub">Powered by AI & Automation</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-animate="fade-up" data-delay="200">
                 WordPress Developer & AI Automation Specialist with 10+ months at 
                 <strong>NSD Soft</strong> — transforming business operations through custom 
                 PHP/MySQL systems and n8n workflow automation.
             </p>
-            <div class="hero-cta-group">
-                <a href="#contact" class="btn btn-primary">Let's Automate Your Growth ⚡</a>
-                <a href="#portfolio" class="btn btn-secondary">View My Work →</a>
+            <div class="hero-cta-group" data-animate="fade-up" data-delay="300">
+                <a href="#contact" class="btn btn-primary">
+                    <span class="btn-text">Let's Automate Your Growth</span>
+                    <span class="btn-icon">⚡</span>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <span class="btn-text">View My Work</span>
+                    <span class="btn-icon">→</span>
+                </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat-item">10+ Months Experience</div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Months at NSD Soft</span>
+                </div>
                 <div class="stat-divider"></div>
-                <div class="stat-item">25+ Projects Delivered</div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
                 <div class="stat-divider"></div>
-                <div class="stat-item">15+ Workflows Automated</div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Workflows Automated</span>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
         </div>
     </section>
 
+    <!-- ═══════════════════ SERVICES SECTION ═══════════════════ -->
     <section id="services" class="services-section">
         <div class="section-container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">// What I Do</span>
                 <h2 class="section-title">Engineering Growth,<br><span class="gradient-text">One System at a Time</span></h2>
+                <p class="section-subtitle">From custom WordPress builds to AI-powered automation — I architect solutions that eliminate bottlenecks and accelerate your revenue.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <h3>Custom WordPress Dev</h3>
-                    <p>Bespoke themes and full-stack CRUD applications built with PHP/MySQL.</p>
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" stroke="currentColor" stroke-width="2"/><path d="M16 20l4 4-4 4M24 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="service-title">Custom WordPress Development</h3>
+                    <p class="service-desc">Bespoke themes, plugins, and full-stack CRUD applications built with clean PHP/MySQL — engineered for scale and performance.</p>
+                    <ul class="service-tags">
+                        <li>PHP/MySQL</li><li>Custom Themes</li><li>Plugin Dev</li><li>REST API</li>
+                    </ul>
                 </div>
-                <div class="service-card featured">
-                    <h3>n8n Workflow Automation</h3>
-                    <p>End-to-end business process automation connecting CRMs and AI APIs.</p>
+                <div class="service-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="service-badge">Most Requested</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="service-title">n8n Workflow Automation</h3>
+                    <p class="service-desc">End-to-end business process automation using n8n — connecting CRMs, emails, databases, and AI APIs into seamless, self-running pipelines.</p>
+                    <ul class="service-tags">
+                        <li>n8n</li><li>API Integration</li><li>Webhooks</li><li>Auto-Pipelines</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <h3>AI Tools Integration</h3>
-                    <p>Embedding GPT and AI vision models directly into business tools.</p>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l6 12h12l-10 8 4 12-12-8-12 8 4-12L6 16h12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="service-title">AI Tools Integration</h3>
+                    <p class="service-desc">Embedding GPT, Claude, and AI vision models directly into your business tools — from smart chatbots to automated content generation systems.</p>
+                    <ul class="service-tags">
+                        <li>ChatGPT API</li><li>AI Chatbots</li><li>Content AI</li><li>Vision AI</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════ PORTFOLIO SECTION ═══════════════════ -->
     <section id="portfolio" class="portfolio-section">
         <div class="section-container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">// Selected Work</span>
                 <h2 class="section-title">Systems That <span class="gradient-text">Deliver Results</span></h2>
+                <p class="section-subtitle">Real projects. Real impact. Here's how I've helped businesses streamline operations and boost efficiency.</p>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <h3>Custom CRUD Admin Panel</h3>
-                    <p>Full-featured dashboard with role-based access for NSD Soft clients.</p>
+                <div class="portfolio-card portfolio-large" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-visual">
+                        <div class="portfolio-mockup crud-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <span class="mockup-url">nsdsoft.com/admin/products</span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-sidebar">
+                                    <div class="sidebar-item active"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-table">
+                                        <div class="table-header"><span></span><span></span><span></span><span></span></div>
+                                        <div class="table-row"><span></span><span></span><span></span><span class="row-action"></span></div>
+                                        <div class="table-row highlight"><span></span><span></span><span></span><span class="row-action"></span></div>
+                                        <div class="table-row"><span></span><span></span><span></span><span class="row-action"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">WordPress + PHP/MySQL</span>
+                        <h3>Custom CRUD Admin Panel</h3>
+                        <p>Built a full-featured admin dashboard with Create, Read, Update, Delete operations — complete with role-based access, search filters, and export functionality.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric"><span class="metric-value">60%</span><span class="metric-label">Faster Data Entry</span></div>
+                            <div class="metric"><span class="metric-value">Zero</span><span class="metric-label">Manual Errors</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-card">
-                    <h3>E-Commerce Platform</h3>
-                    <p>Custom WooCommerce store with automated inventory management.</p>
+                <div class="portfolio-card" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-visual">
+                        <div class="portfolio-mockup ecommerce-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <span class="mockup-url">client-store.com</span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-products">
+                                    <div class="mini-product"></div>
+                                    <div class="mini-product"></div>
+                                    <div class="mini-product"></div>
+                                    <div class="mini-product"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">WooCommerce</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Custom WooCommerce store with advanced filtering, payment gateway integration, and automated inventory management.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-visual">
+                        <div class="portfolio-mockup ai-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <span class="mockup-url">ai-dashboard.app</span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="ai-chat">
+                                    <div class="chat-bubble user"></div>
+                                    <div class="chat-bubble bot"></div>
+                                    <div class="chat-bubble user small"></div>
+                                    <div class="chat-bubble bot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">AI Integration</span>
+                        <h3>AI-Powered Chatbot</h3>
+                        <p>GPT-integrated customer support bot embedded into WordPress — handling 80% of queries without human intervention.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════ WORKFLOWS SECTION ═══════════════════ -->
     <section id="workflows" class="workflows-section">
         <div class="section-container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">// Automation Lab</span>
                 <h2 class="section-title">Workflows That <span class="gradient-text">Run Your Business</span></h2>
+                <p class="section-subtitle">See how n8n automation eliminates repetitive tasks — so you can focus on what actually grows your business.</p>
             </div>
-            <div class="workflow-item">
-                <p>Email Parser ➔ AI Category ➔ CRM Log ➔ Auto Reply</p>
+            <div class="workflows-showcase">
+                <!-- Workflow 1 -->
+                <div class="workflow-item" data-animate="fade-up" data-delay="0">
+                    <div class="workflow-diagram">
+                        <div class="wf-node trigger">
+                            <div class="node-icon">📧</div>
+                            <span>New Email</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">🤖</div>
+                            <span>AI Parse</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">📊</div>
+                            <span>CRM Update</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node output">
+                            <div class="node-icon">✅</div>
+                            <span>Auto Reply</span>
+                        </div>
+                    </div>
+                    <div class="workflow-info">
+                        <h3>Lead Capture & Nurture Pipeline</h3>
+                        <p>Incoming emails are parsed by AI, categorized, logged into CRM, and responded to automatically — cutting response time from hours to seconds.</p>
+                        <div class="workflow-stat">
+                            <span class="ws-number">95%</span>
+                            <span class="ws-label">Response Time Reduction</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Workflow 2 -->
+                <div class="workflow-item reverse" data-animate="fade-up" data-delay="100">
+                    <div class="workflow-info">
+                        <h3>Content Generation Engine</h3>
+                        <p>Automated blog post creation pipeline — from keyword research to AI-drafted content, SEO optimization, and scheduled WordPress publishing.</p>
+                        <div class="workflow-stat">
+                            <span class="ws-number">10x</span>
+                            <span class="ws-label">Content Output Increase</span>
+                        </div>
+                    </div>
+                    <div class="workflow-diagram">
+                        <div class="wf-node trigger">
+                            <div class="node-icon">🔑</div>
+                            <span>Keywords</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">🧠</div>
+                            <span>GPT Draft</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">🔍</div>
+                            <span>SEO Check</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node output">
+                            <div class="node-icon">📝</div>
+                            <span>Publish</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Workflow 3 -->
+                <div class="workflow-item" data-animate="fade-up" data-delay="200">
+                    <div class="workflow-diagram">
+                        <div class="wf-node trigger">
+                            <div class="node-icon">🛒</div>
+                            <span>New Order</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">📦</div>
+                            <span>Inventory</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node process">
+                            <div class="node-icon">📨</div>
+                            <span>Notify</span>
+                        </div>
+                        <div class="wf-connector"><div class="connector-line"></div><div class="connector-pulse"></div></div>
+                        <div class="wf-node output">
+                            <div class="node-icon">🚚</div>
+                            <span>Ship</span>
+                        </div>
+                    </div>
+                    <div class="workflow-info">
+                        <h3>E-Commerce Order Automation</h3>
+                        <p>WooCommerce orders trigger automatic inventory updates, customer notifications, invoice generation, and shipping label creation.</p>
+                        <div class="workflow-stat">
+                            <span class="ws-number">4hrs</span>
+                            <span class="ws-label">Saved Daily</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
     <section id="contact" class="contact-section">
         <div class="section-container">
-            <div class="section-header">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// Let's Connect</span>
                 <h2 class="section-title">Ready to <span class="gradient-text">Automate & Grow?</span></h2>
+                <p class="section-subtitle">Whether you need a custom WordPress system or want to automate your entire workflow — I'm one message away.</p>
             </div>
-            <form class="contact-form" id="contact-form">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea rows="5" placeholder="Project Details" required></textarea>
-                <button type="submit" class="btn btn-primary">Let's Automate Success 🚀</button>
-            </form>
+            <div class="contact-grid">
+                <form class="contact-form" id="contact-form" data-animate="fade-up" data-delay="0">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="wordpress">Custom WordPress Development</option>
+                            <option value="automation">n8n Workflow Automation</option>
+                            <option value="ai">AI Tools Integration</option>
+                            <option value="full">Full-Stack Solution</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text">Let's Automate Your Success</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                </form>
+                <div class="contact-info" data-animate="fade-up" data-delay="100">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Based At</h4>
+                        <p>NSD Soft<br>Pakistan</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⚡</div>
+                        <h4>Response Time</h4>
+                        <p>Within 24 hours<br>Usually much faster</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                            <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                            <a href="#" class="social-link" aria-label="WhatsApp">wa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
     <footer class="site-footer">
         <div class="footer-container">
-            <p>&copy; 2026 Muhammad Ilyas. Crafted with precision & passion.</p>
+            <a href="#hero" class="footer-logo">
+                <span class="logo-bracket">&lt;</span>M.Ilyas<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <p class="footer-tagline">Building intelligent systems that grow businesses.</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 Muhammad Ilyas. Crafted with precision & passion.</p>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
